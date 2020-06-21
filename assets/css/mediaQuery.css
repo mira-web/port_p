@@ -1,0 +1,701 @@
+@charset "utf-8";
+
+/*MediaQuery*/
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #header .header h1,
+    .sec1 .sec1_left .text_wrap .mainText span:nth-child(1),
+    .sec2 .sec2_top .sec2_subtit span em,
+    .sec2 .sec2_bottom .sec2_subCont span em,
+    .sec2 .sec2_bottom article .sec2_bottom_subtit span em,
+    .sec3 .sec3_top .sec3_subtit span em,
+    .sec3 .sec3_bottom .sec3_subCont span em,
+    .sec3 .sec3_bottom article .sec3_bottom_subtit span em,
+    .sec4 .sec4_right .sec4_cont .sec4_desc span em {
+        background-image:none;
+    }
+    
+    .sec2 .sec2_top .sec2_desc a.button span:after {right: -1.5vw; top : 0.7vw;}
+    .sec2 .sec2_bottom .sec2_subCont a.button span:after {right: -1.5vw; top : 0.8vw;}
+    .sec3 .sec3_bottom .sec3_subCont .button_wrap ul li.button span:after {right: -1.5vw; top : 0.5vw;}
+    .sec3 .sec3_bottom .sec3_subCont .button_wrap ul ul li.versionBtn span:after {right: -1.5vw; top : 0.3vw;}
+    .sec4 .sec4_left ul li a strong span:after {top : 0.3vw;}
+}
+
+
+
+/* 화면너비 0~1220px */
+@media (max-width: 1220px){
+    .sec1 .sec1_left .text_wrap {height: 60vw;} 
+    .sec1 .sec1_left .text_wrap .mainText {position: absolute; bottom: 9vw;}
+    .footer .foot_cont .contact .info {width: 60%;}
+    .footer .foot_cont .contact .info ul li {font-size: 1.5vw;}
+}
+
+/* 화면너비 0~1024px */
+@media (max-width: 1024px){
+    #header .header {width: 100%; height: 7vw;} 
+    #header .header h1 {
+        font-size: 2.5vw;
+        padding: 1.5vw 2.5vw;
+    }
+    #header .header .nav ul li {padding-top: 2.7vw;}
+    #header .header .nav ul li a {font-size: 1.4vw;}
+    
+    .top a {width: 7vw; height: 7vw;}
+    .top a span {font-size: 1.5vw;}
+    
+    .sec1 .sec1_left {width: 100%;}
+    .sec1 .sec1_right {display: none;}
+    
+    .sec1 .sec1_left .text_wrap {height: 70vw;} 
+    .sec1 .sec1_left .text_wrap .subText {position: absolute; left: 17vw; top: 10vw;}
+    .sec1 .sec1_left .text_wrap .subText ul li {
+        font-size: 1.5vw;
+        width: 20vw;
+        padding-right: 3vw;
+    }
+    .sec1 .sec1_left .text_wrap .mainText {position: absolute; left: 16vw; bottom: 8vw;}
+    .sec1 .sec1_left .text_wrap .mainText span {font-size: 8.5vw;}
+    .sec1 .sec1_left .text_wrap .mainText span:nth-child(1) {font-size: 9vw;}
+    .sec1 .sec1_left .text_wrap .mainText span:nth-child(1) em {font-size: 8vw;}
+
+    .sec1 .sec1_left .about_wrap {height: 85vw;} 
+    .sec1 .sec1_left .about_wrap h2 {padding: 4vw 8vw;}
+
+    .sec1 .sec1_left .about_wrap h2 span {font-size: 3vw;}
+    
+    .sec1 .sec1_left .about_wrap ul {padding: 5vw 8vw 10vw;}
+    .sec1 .sec1_left .about_wrap ul li {font-size: 2vw;}
+    .sec1 .sec1_left .about_wrap .about_img {
+        width: 27vw; margin-left: 12vw;
+    }
+    .sec1 .sec1_left .about_wrap .about_text {right: 8vw; top: 35vw; width: 33vw;} 
+    .sec1 .sec1_left .about_wrap .about_text article h3 {
+        font-size: 1.5vw; 
+        padding: 2.2vw 0; 
+    }
+    .sec1 .sec1_left .about_wrap .about_text article p {
+        font-size: 1.4vw; 
+        line-height: 1.7; 
+        padding: 2.2vw 0 3.3vw;
+    } 
+    
+
+    .footer .foot_menu {height: 7vw;}
+    .footer .foot_menu h1 {
+        font-size: 2.5vw;
+        padding: 1.5vw 2.5vw;
+    }
+    .footer .foot_menu .foot_nav ul li {padding-top: 2.7vw;}
+    .footer .foot_menu .foot_nav ul li a {font-size: 1.4vw;}
+   
+
+}
+
+/* 화면너비 0~960px */
+@media (max-width: 960px){
+    #header .header {width: 100%; height: 8vw;} 
+    #header .header h1 {
+        font-size: 2.7vw;
+        padding: 2vw 3vw;
+    }
+    #header .header .nav ul li {padding-top: 3vw;}
+    #header .header .nav ul li a {font-size: 1.8vw;}
+    
+    .sec1 .sec1_left .text_wrap .subText ul li {font-size: 1.7vw;}
+    
+    .sec1 .sec1_left .about_wrap {height: 95vw;} 
+    
+    .sec1 .sec1_left .about_wrap ul {padding: 5vw 8vw 12vw;}
+    .sec1 .sec1_left .about_wrap ul li {font-size: 2.3vw;}
+    .sec1 .sec1_left .about_wrap .about_img {margin-left: 7vw;}
+    .sec1 .sec1_left .about_wrap .about_text {right: 8vw; top: 40vw; width: 40vw;} 
+    .sec1 .sec1_left .about_wrap .about_text article h3 {
+        font-size: 2vw; 
+        padding: 2.2vw 0; 
+    }
+    .sec1 .sec1_left .about_wrap .about_text article p {
+        font-size: 1.7vw; 
+        line-height: 1.7; 
+        padding: 2.2vw 0 3.3vw;
+    } 
+    
+    .sec1_skill .skill h2 {text-align: left;}
+    .sec1_skill .skill h2 span {font-size: 6vw}
+    .sec1_skill .skill .skill_text {display: none;}
+    .sec1_skill .skill .skill_number {position: relative; width: 100%; height: 34vw;}
+    .sec1_skill .skill .skill_number .number_bottom {}
+    .sec1_skill .skill .skill_number .number_top.active {right: 18%;}
+    .sec1_skill .skill .skill_number .number_bottom.active {right: 39%;}
+    .sec1_skill .skill .skill_number li {
+        width: 17vw; 
+        padding-bottom: 17vw;
+    }
+    .sec1_skill .skill .skill_number li:last-child {}
+    .sec1_skill .skill .skill_number li span {font-size: 1.5vw;}
+    .sec2 .sec2_tit {margin: 12vw 0 10vw;}
+    .sec2 .sec2_tit h2 span {font-size: 6vw;}
+    
+    .sec2 .sec2_top .sec2_subtit span {font-size: 2vw;}
+    .sec2 .sec2_top .sec2_subtit span em {
+        font-size: 2vw;
+        padding-right: 1.5vw;
+    }
+    .sec2 .sec2_top .sec2_subtit h3 {
+        font-size: 4vw;
+        line-height: 1.3;
+    }
+    .sec2 .sec2_top .sec2_desc {padding-top: 3vw;}
+    .sec2 .sec2_top .sec2_desc p {font-size: 2vw;}
+    .sec2 .sec2_top .sec2_desc a.button {display: none;}
+    .sec2 .sec2_top .sec2_img a {position: relative;}
+    .sec2 .sec2_img a:hover div {
+        display: block;  
+        position: absolute; left: 0; top: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .sec2 .sec2_img a div span.view {
+        display: inline-block;
+        position: absolute;
+        left: 50%; top: 50%; transform: translate(-50%,-50%);
+        width: 16vw; height: 6vw;
+        background: #fff;
+        border-radius: 30px;
+    }
+    .sec2 .sec2_img a div span.view em {
+        display: block;
+        font-size: 2.5vw;
+        color: #00263b;
+        text-align: center;
+        line-height: 2.5;
+    }
+    
+    
+    
+
+    
+    .sec2 .sec2_bottom article {
+        display: flex; flex-direction: column;
+        padding-bottom: 8vw;
+    }
+    
+    .sec2 .sec2_bottom article .sec2_img a {position: relative;}
+    .sec2 .sec2_bottom article:nth-child(1) .sec2_img a > span {width: 36vw; height: 24vw;}
+    .sec2 .sec2_bottom article:nth-child(2) .sec2_img a > span {width: 40vw; height: 26vw;}
+    .sec2 .sec2_bottom article:nth-child(3) .sec2_img a > span {width: 44vw; height: 28vw;}
+    .sec2 .sec2_bottom article:nth-child(4) .sec2_img a > span {width: 48vw; height: 30vw;}
+
+    .sec2 .sec2_bottom article:nth-child(1) .sec2_img.show a > span { 
+        width: 40vw; height: 28vw;
+    }
+    .sec2 .sec2_bottom article:nth-child(2) .sec2_img.show a > span {
+        width: 44vw; height: 30vw;
+    }
+    .sec2 .sec2_bottom article:nth-child(3) .sec2_img.show a > span {
+        width: 48vw; height: 32vw;
+    }
+    .sec2 .sec2_bottom article:nth-child(4) .sec2_img.show a > span {
+        width: 52vw; height: 34vw;
+    }
+    
+    .sec2 .sec2_bottom article .sec2_img a:hover div {
+        display: block;  
+        position: absolute; left: 0; top: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .sec2 .sec2_bottom article .sec2_img a div span.view {
+        display: inline-block;
+        position: absolute;
+        left: 50%; top: 50%; transform: translate(-50%,-50%);
+        width: 14vw; height: 5vw;
+        background: #fff;
+        border-radius: 30px;
+    }
+    .sec2 .sec2_bottom article .sec2_img a div span.view em {
+        display: block;
+        font-size: 2.2vw;
+        color: #00263b;
+        text-align: center;
+        line-height: 2.2;
+    }
+    
+    
+    .sec2 .sec2_bottom .sec2_subCont {padding-left: 0; padding-top: 2vw;}
+    .sec2 .sec2_bottom .sec2_subCont span {font-size: 1.5vw;}
+    .sec2 .sec2_bottom .sec2_subCont span em {
+        font-size: 1.3vw;
+        padding-right: 1vw;
+    }
+    .sec2 .sec2_bottom .sec2_subCont h3 {font-size: 3vw;}
+    .sec2 .sec2_bottom .sec2_subCont p {
+        font-size: 1.7vw;
+        margin-top: 1vw;
+    }
+    .sec2 .sec2_bottom .sec2_subCont a.button {display: none;}
+    
+    
+    
+    
+    
+    .sec3 .sec3_tit {margin: 12vw 0 10vw;}
+    .sec3 .sec3_tit h2 span {font-size: 6vw;}
+    
+    .sec3 .sec3_top {display: none;}
+    .sec3 .sec3_top .sec3_subtit span {font-size: 2vw;}
+    .sec3 .sec3_top .sec3_subtit span em {
+        font-size: 2vw;
+        padding-right: 1.5vw;
+    }
+    .sec3 .sec3_top .sec3_subtit h3 {
+        font-size: 4vw;
+        line-height: 1.3;
+    }
+    
+    .sec3 .sec3_top .sec3_desc {padding-top: 3vw;}
+    .sec3 .sec3_top .sec3_desc p {font-size: 2vw;}
+    
+
+    
+    .sec3 .sec3_bottom article {
+        display: flex; flex-direction: column;
+        padding-bottom: 10vw;
+    }
+    
+    .sec3 .sec3_bottom article .sec3_img a {position: relative;}
+    .sec3 .sec3_bottom article:nth-child(1) .sec3_img a > span {width: 36vw; height: 24vw;}
+    .sec3 .sec3_bottom article:nth-child(2) .sec3_img a > span {width: 40vw; height: 26vw;}
+
+    .sec3 .sec3_bottom article:nth-child(1) .sec3_img.show a > span { 
+        width: 40vw; height: 28vw;
+    }
+    .sec3 .sec3_bottom article:nth-child(2) .sec3_img.show a > span {
+        width: 44vw; height: 30vw;
+    }
+    
+    
+    .sec3 .sec3_bottom article .sec3_img a:hover div {
+        display: block;  
+        position: absolute; left: 0; top: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .sec3 .sec3_bottom article .sec3_img a div span.view {
+        display: inline-block;
+        position: absolute;
+        left: 50%; top: 50%; transform: translate(-50%,-50%);
+        width: 20vw; height: 5vw;
+        background: #fff;
+        border-radius: 30px;
+    }
+    .sec3 .sec3_bottom article .sec3_img a div span.view em {
+        display: block;
+        font-size: 1.8vw;
+        color: #00263b;
+        text-align: center;
+        line-height: 2.8;
+    }
+    
+    .sec3 .sec3_bottom .sec3_subCont {padding-left: 0; padding-top: 2vw;}
+    .sec3 .sec3_bottom .sec3_subCont span {font-size: 1.5vw;}
+    .sec3 .sec3_bottom .sec3_subCont span em {
+        font-size: 1.3vw;
+        padding-right: 1vw;
+    }
+    .sec3 .sec3_bottom .sec3_subCont h3 {font-size: 3vw;}
+    .sec3 .sec3_bottom .sec3_subCont p {
+        font-size: 1.7vw;
+        margin-top: 1vw;
+    }
+    
+    
+    .sec3 .sec3_bottom .sec3_subCont .button_wrap {
+        position: absolute; left: 0vw;
+        margin-top: 1.5vw;
+    }
+
+    .sec3 .sec3_bottom .sec3_subCont .button_wrap ul li {text-align: left;}
+    .sec3 .sec3_bottom .sec3_subCont .button_wrap ul li.button span {display: none;}
+    .sec3 .sec3_bottom .sec3_subCont .button_wrap ul ul li a {
+        display: inline-block;
+        padding: 1vw 3vw 1vw 0;
+        margin-right: 2vw;
+    }
+    .sec3 .sec3_bottom .sec3_subCont .button_wrap ul ul li.versionBtn span {font-size: 1.7vw;}
+
+    .sec3 .sec3_bottom .sec3_subCont .button_wrap ul ul li.versionBtn span:after {
+        right: -2vw; top: 0.7vw;
+        width: 0.65vw; height: 0.65vw;
+    }
+    
+    .sec4 .sec4_left ul {transform: translateY(0vw);}
+    .sec4 .sec4_left ul li a {
+        height: 8.5vw; 
+        padding: 8%; 
+    }
+    .sec4 .sec4_left ul li a em {font-size: 1.2vw;}
+    .sec4 .sec4_left ul li a > span {font-size: 2.2vw;}
+    .sec4 .sec4_left ul li a strong span {font-size: 1.3vw;}
+    .sec4 .sec4_left ul li a strong span:after {
+        right: -1.7vw; top: 0.7vw;
+        width: 0.55vw; height: 0.55vw; 
+    }
+    
+    
+    .footer .foot_menu {height: 8vw;}
+    .footer .foot_menu h1 {
+        font-size: 2.7vw;
+        padding: 2.2vw 3vw;
+    }
+    .footer .foot_menu .foot_nav ul li {padding-top: 3vw;}
+    .footer .foot_menu .foot_nav ul li a {font-size: 1.8vw;}
+    
+    .footer .foot_cont .contact .namecard {width: 60%;}
+
+    
+    
+}
+
+/* 화면너비 0~768px */
+@media (max-width: 768px){
+    #header .header {height: 9vw;}
+    #header .header.on {top: -9vw;}
+    #header .header h1 {
+        font-size: 3.3vw;
+        padding: 2vw 3vw;
+    }
+    #header .header .nav {display: none;}
+    #header .header .mobile_menu {display: block;}
+    #header .header .mobile_menu .ham {
+        position: absolute; right: 3.5vw; top: 1vw;  
+    }
+    #header .header .mobile_menu .ham a {
+        display: block;
+        width: 6vw; height: 100%;
+        padding: 5%;
+    }
+    #header .header .mobile_menu .ham a span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #00263b;
+        margin: 1.5vw auto;
+    }
+    
+    #header .header .mobile_menu .bg_mobile {
+        z-index: 1500;
+        display: none; 
+        position: fixed; 
+        left: 0; top:0; 
+        width: 100%; height: 100%; 
+        background-color: rgba(0,0,0,.6);
+    }
+    #header .header .mobile_menu .bg_mobile.on {display: block;}
+    
+    #header .header .mobile_menu .mobile_nav {
+        z-index: 2000;
+        position: fixed;
+        right: -40%; top: 0;
+        width: 40%;
+        height: 100%;
+        background-color: #00263b;
+        border-left: 1px solid #ccc;
+        transition: all 0.5s ease;
+    }
+    #header .header .mobile_menu .mobile_nav.on {right: 0;}
+    #header .header .mobile_menu .mobile_nav h2 {
+        padding: 5vw;
+        font-size: 4vw;
+        line-height: 2;
+        color: #fefaec;
+    }
+    #header .header .mobile_menu .mobile_nav ul {padding: 0 5vw;}
+    #header .header .mobile_menu .mobile_nav ul li a{
+        font-size: 3.5vw;
+        line-height: 2;
+        color: #fefaec;
+        opacity: 0.8;
+        transition: opacity 0.35s ease;
+    }
+    #header .header .mobile_menu .mobile_nav ul li a:hover {opacity: 1;}
+    
+    #header .header .mobile_menu .close {
+        opacity: 0;
+        z-index: 2000;
+        position: fixed;
+        right: 42%;
+        top: 2%;
+        transition: all 0.7s ease;
+    }
+    #header .header .mobile_menu .close.on {opacity: 1;}
+    #header .header .mobile_menu .close a {
+        display: block; 
+        width: 38px;
+        height: 38px;
+    }
+    #header .header .mobile_menu .close a span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6; 
+        transition: opacity 0.35s ease;
+    }
+    #header .header .mobile_menu .close a span:hover {opacity: 1;}
+    #header .header .mobile_menu .close a span:before, #header .header .mobile_menu .close a span:after {
+        content: "";
+        position: absolute;
+        left: 18px; top: 0;
+        width: 2px; height: 38px;
+        background: #fefaec;
+    }
+    #header .header .mobile_menu .close a span:before {transform: rotate(45deg);}
+    #header .header .mobile_menu .close a span:after {transform: rotate(-45deg);}
+    
+    .top a {width: 8vw; height: 8vw;}
+    .top a span {font-size: 1.8vw;}
+    
+    .sec1 .sec1_left .text_wrap {height: 75vw;} 
+    .sec1 .sec1_left .text_wrap .subText {position: absolute; left: 11vw; top: 12vw;}
+    .sec1 .sec1_left .text_wrap .subText ul li {
+        font-size: 1.8vw;
+        width: 22vw;
+        padding-right: 5vw;
+    }
+    .sec1 .sec1_left .text_wrap .mainText span {font-size: 8.5vw;}
+    .sec1 .sec1_left .text_wrap .mainText span:nth-child(1) {font-size: 9vw;}
+    .sec1 .sec1_left .text_wrap .mainText span:nth-child(1) em {font-size: 8vw;}
+
+    .sec1 .sec1_left .about_wrap {height: 101vw;} 
+    .sec1 .sec1_left .about_wrap h2 {padding: 4vw 8vw;}
+
+    .sec1 .sec1_left .about_wrap h2 span {font-size: 3.5vw;}
+    
+    .sec1 .sec1_left .about_wrap ul {padding: 6vw 8vw;}
+    .sec1 .sec1_left .about_wrap ul li {font-size: 2.5vw;}
+    .sec1 .sec1_left .about_wrap .about_img {display: none;}
+    .sec1 .sec1_left .about_wrap .about_text {left: 8vw; top: 50vw; width: 82vw;} 
+    .sec1 .sec1_left .about_wrap .about_text article h3 {
+        font-size: 2.3vw; 
+        padding: 2.5vw 0; 
+    }
+    .sec1 .sec1_left .about_wrap .about_text article p {
+        font-size: 1.8vw; 
+        line-height: 1.8; 
+        padding: 2.2vw 0 3.3vw;
+    } 
+    
+    .sec2 .sec2_bottom article {padding-bottom: 10vw;}
+    .sec2 .sec2_bottom article .sec2_bottom_subtit {display: block;}
+    .sec2 .sec2_bottom article .sec2_bottom_subtit span {font-size: 2vw;}
+    .sec2 .sec2_bottom article .sec2_bottom_subtit span em {
+        font-size: 2vw;
+        padding-right: 1.5vw;
+    }
+    .sec2 .sec2_bottom article .sec2_bottom_subtit h3 {
+        font-size: 4vw;
+        line-height: 1.3;
+        font-weight: bold;
+    }
+    .sec2 .sec2_bottom article .sec2_img a {position: relative;}
+    .sec2 .sec2_bottom article:nth-child(1) .sec2_img a > span {width: 80vw; height: 50vw;}
+    .sec2 .sec2_bottom article:nth-child(2) .sec2_img a > span {width: 80vw; height: 50vw;}
+    .sec2 .sec2_bottom article:nth-child(3) .sec2_img a > span {width: 80vw; height: 50vw;}
+    .sec2 .sec2_bottom article:nth-child(4) .sec2_img a > span {width: 80vw; height: 50vw;}
+
+    .sec2 .sec2_bottom article:nth-child(1) .sec2_img.show a > span { 
+        width: 80vw; height: 50vw;
+    }
+    .sec2 .sec2_bottom article:nth-child(2) .sec2_img.show a > span {
+        width: 80vw; height: 50vw;
+    }
+    .sec2 .sec2_bottom article:nth-child(3) .sec2_img.show a > span {
+        width: 80vw; height: 50vw;
+    }
+    .sec2 .sec2_bottom article:nth-child(4) .sec2_img.show a > span {
+        width: 80vw; height: 50vw;
+    }
+    
+    .sec2 .sec2_bottom article .sec2_img a div span.view {
+        width: 16vw; height: 6vw;
+    }
+    .sec2 .sec2_bottom article .sec2_img a div span.view em {
+        font-size: 2.5vw; line-height: 2.6;
+    }
+    
+    .sec2 .sec2_bottom .sec2_subCont span {display: none;}
+    .sec2 .sec2_bottom .sec2_subCont h3 {display: none;}
+    .sec2 .sec2_bottom .sec2_subCont p {
+        font-size: 2vw;
+        margin-top: 0vw;
+    }
+    
+    
+    .sec3 .sec3_bottom article {padding-bottom: 15vw;}
+    .sec3 .sec3_bottom article .sec3_bottom_subtit {display: block;}
+    .sec3 .sec3_bottom article .sec3_bottom_subtit span {font-size: 2vw;}
+    .sec3 .sec3_bottom article .sec3_bottom_subtit span em {
+        font-size: 2vw;
+        padding-right: 1.5vw;
+    }
+    .sec3 .sec3_bottom article .sec3_bottom_subtit h3 {
+        font-size: 4vw;
+        line-height: 1.3;
+        font-weight: bold;
+    }
+    
+    .sec3 .sec3_bottom article .sec3_img a {position: relative;}
+    .sec3 .sec3_bottom article:nth-child(1) .sec3_img a > span {width: 80vw; height: 50vw;}
+    .sec3 .sec3_bottom article:nth-child(2) .sec3_img a > span {width: 80vw; height: 50vw;}
+    .sec3 .sec3_bottom article:nth-child(3) .sec3_img a > span {width: 80vw; height: 50vw;}
+    .sec3 .sec3_bottom article:nth-child(4) .sec3_img a > span {width: 80vw; height: 50vw;}
+
+    .sec3 .sec3_bottom article:nth-child(1) .sec3_img.show a > span { 
+        width: 80vw; height: 50vw;
+    }
+    .sec3 .sec3_bottom article:nth-child(2) .sec3_img.show a > span {
+        width: 80vw; height: 50vw;
+    }
+    .sec3 .sec3_bottom article:nth-child(3) .sec3_img.show a > span {
+        width: 80vw; height: 50vw;
+    }
+    .sec3 .sec3_bottom article:nth-child(4) .sec3_img.show a > span {
+        width: 80vw; height: 50vw;
+    }
+    
+    .sec3 .sec3_bottom article .sec3_img a div span.view {
+        width: 27vw; height: 6vw;
+    }
+    .sec3 .sec3_bottom article .sec3_img a div span.view em {
+        font-size: 2.5vw; line-height: 2.6;
+    }
+    
+    .sec3 .sec3_bottom .sec3_subCont span {display: none;}
+    .sec3 .sec3_bottom .sec3_subCont h3 {display: none;}
+    .sec3 .sec3_bottom .sec3_subCont p {
+        font-size: 2vw;
+        margin-top: 0vw;
+    }
+    
+    .sec3 .sec3_bottom .sec3_subCont .button_wrap ul ul li a {
+        padding: 1vw 4vw 1vw 0;
+        margin-right: 3vw;
+    }
+    .sec3 .sec3_bottom .sec3_subCont .button_wrap ul ul li.versionBtn span {font-size: 2vw;}
+    .sec3 .sec3_bottom .sec3_subCont .button_wrap ul ul li.versionBtn span:after {right: -2.5vw; }
+    
+    .sec4 .sec4_left ul li a {height: 9vw;}
+    .sec4 .sec4_left ul li a strong {display: none;}
+    .sec4 .sec4_left ul li a em {font-size: 1.5vw;}
+    .sec4 .sec4_left ul li a > span {margin-top: 0.5vw; font-size: 2.2vw;}
+    
+   
+    .sec4 .sec4_right .sec4_cont .sec4_desc span {font-size: 1.7vw;}
+    .sec4 .sec4_right .sec4_cont .sec4_desc span em {
+        font-size: 1.5vw;
+        padding-right: 1vw;
+    }
+    .sec4 .sec4_right .sec4_cont .sec4_desc h3 {font-size: 2.7vw;}
+    .sec4 .sec4_right .sec4_cont .sec4_desc p {font-size: 1.7vw;}
+    
+    
+    .footer .foot_menu {height: 8vw;}
+    .footer .foot_menu h1 {
+        font-size: 2.7vw;
+        padding: 2.2vw 3vw;
+    }
+    
+    .footer .foot_cont .contact h2 span {font-size: 5vw;}
+    .footer .foot_cont .contact .namecard {width: 70%;}
+    .footer .foot_cont .contact .namecard span {font-size: 18px;}
+    .footer .foot_cont .contact form input,.footer .foot_cont .contact form textarea {font-size: 13px;}
+    
+    .footer .foot_cont .contact .info {width: 38%;}
+    .footer .foot_cont .contact .info ul li {font-size: 2vw;}
+    .footer .foot_cont .contact .info ul li:nth-child(2) {margin-right: 0;}
+
+    
+}
+
+/* 화면너비 0~600px */
+@media (max-width: 600px){
+    .top {right: 2.5vw; bottom: 2.5vw;}
+    .top a {width: 10vw; height: 10vw;}
+    .top a span {font-size: 3vw;}
+    
+    
+    .sec1 .sec1_left .text_wrap {height: 70vw;} 
+    .sec1 .sec1_left .text_wrap .subText {display: none;}
+    .sec1 .sec1_left .text_wrap .mainText {top: 25vw;}
+    .sec1 .sec1_left .text_wrap .mainText span {font-size: 8.5vw;}
+    .sec1 .sec1_left .text_wrap .mainText span:nth-child(1) {font-size: 9vw;}
+    .sec1 .sec1_left .text_wrap .mainText span:nth-child(1) em {font-size: 8vw;}
+    
+    .sec4 .sec4_left ul li a {height: 9.5vw;}
+    
+    .footer .foot_menu {display: none;}
+    
+    .footer .foot_cont .contact h2 span {font-size: 6vw;}
+    .footer .foot_cont .contact .namecard {width: 80%;}
+    .footer .foot_cont .contact .namecard span {display: none;}
+    .footer .foot_cont .contact form input,.footer .foot_cont .contact form textarea {font-size: 13px;}
+    
+    .footer .foot_cont .contact .info {width: 47%;}
+    .footer .foot_cont .contact .info ul {margin-top: 10vw;}
+    .footer .foot_cont .contact .info ul li {font-size: 3vw;}
+    .footer .foot_cont .contact .info ul li:nth-child(2) {margin-right: 0;}
+}
+
+/* 화면너비 0~480px */
+@media (max-width: 480px){
+    
+    #header .header {height: 11vw;}
+    #header .header.on {top: -11vw;}
+    #header .header h1 {
+        font-size: 4.5vw;
+        padding: 2vw 4.5vw;
+    }
+    #header .header .mobile_menu .ham {
+        position: absolute; right: 4.5vw; top: 1.2vw;  
+    }
+    #header .header .mobile_menu .ham a {width: 7vw;}
+    
+     #header .header .mobile_menu .mobile_nav {
+        right: -70%;
+        width: 70%;
+    }
+    #header .header .mobile_menu .mobile_nav.on {right: 0;}
+    #header .header .mobile_menu .mobile_nav h2 {
+        padding: 6vw;
+        font-size: 6vw;
+    }
+    #header .header .mobile_menu .mobile_nav ul {padding: 0 6vw;}
+    #header .header .mobile_menu .mobile_nav ul li a{
+        font-size: 4.5vw;
+        line-height: 2.5;
+    }
+    #header .header .mobile_menu .close {right: 72%;}
+    
+    .top a {width: 14vw; height: 14vw;}
+    .top a span {font-size: 3.5vw;}
+    
+    .sec1 .sec1_left .about_wrap {height: 150vw;} 
+    .sec1 .sec1_left .about_wrap h2 span {font-size: 4.5vw;}
+    
+    .sec1 .sec1_left .about_wrap ul {padding: 8vw 8vw;}
+    .sec1 .sec1_left .about_wrap ul li {font-size: 3.3vw; line-height: 1.8;}
+    .sec1 .sec1_left .about_wrap .about_text {left: 8vw; top: 73vw; width: 82vw;} 
+    .sec1 .sec1_left .about_wrap .about_text article h3 {
+        font-size: 3vw; 
+        padding: 3.5vw 0; 
+    }
+    .sec1 .sec1_left .about_wrap .about_text article p {
+        font-size: 2.5vw; 
+        line-height: 2; 
+        padding: 2.5vw 0 4vw;
+    } 
+    
+    
+}
